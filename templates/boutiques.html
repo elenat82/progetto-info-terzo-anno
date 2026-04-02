@@ -1,0 +1,92 @@
+<navbar></navbar>
+<breadcrumbs></breadcrumbs>
+<main role="main">
+    <div class="container lista-boutiques">
+        <h2>Boutiques</h2>
+        <div class="row" ng-if="stores">
+            <div class="col-md-4">
+                <ul class="list-unstyled">
+                    <li ng-repeat="s in stores track by s.id">
+                        <h4 ng-click="emettiEvento($index)" tabindex="0">{{s.nome}}</h4>
+                        <p>{{s.indirizzo}}</p>
+                        <p><a ng-href="tel:{{s.telefono1}}" title="Fai una chiamata alla boutique"><span class="fa-solid fa-phone" role="img" aria-hidden="true"></span> {{s.telefono1}}</a></p>
+                        <p><a ng-href="tel:{{s.telefono2}}" title="Fai una chiamata alla boutique"><span class="fa-solid fa-mobile-screen-button" role="img" aria-hidden="true"></span> {{s.telefono2}}</a></p>
+                        <p><button class="btn btn-link" ng-click="apriModale()"><span class="fa-solid fa-comment-dots" role="img" aria-hidden="true"></span> Contatta la boutique</button></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <mappa stores="stores"></mappa>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="boutiqueModalLabel" id="modaleBoutique">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="boutiqueModalLabel">
+                        Contatta la boutique
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="dati-form" aria-live="polite"></div>
+                    <form name="boutique" id="boutique" role="form">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group required">
+                                    <label for="nome">Nome: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                                    <input type="text" class="form-control" name="nome" id="nome" required aria-required="true" placeholder="Inserisci il tuo nome">
+                                </div>
+                                <div class="alert alert-danger" role="alert" id="nome-required" hidden>
+                                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                    <span class="sr-only">Error:</span><span>Campo obbligatorio</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group required">
+                                    <label for="email">Email: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                                    <input type="email" class="form-control" name="email" id="email" required aria-required="true" placeholder="Inserisci la tua email">
+                                </div>
+                                <div class="alert alert-danger" role="alert" id="email-error" hidden>
+                                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                    <span class="sr-only">Error:</span><span>Email non valida</span>
+                                </div>
+                                <div class="alert alert-danger" role="alert" id="email-required" hidden>
+                                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                    <span class="sr-only">Error:</span><span>Campo obbligatorio</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group required">
+                                    <label for="messaggio">Messaggio: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                                    <textarea class="form-control" rows="5" name="messaggio" id="messaggio" required  aria-required="true" placeholder="Inserisci il tuo messaggio"></textarea>
+                                </div>
+                                <div class="alert alert-danger" role="alert" id="messaggio-required" hidden>
+                                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                    <span class="sr-only">Error:</span><span>Campo obbligatorio</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <!-- <button type="submit" class="btn btn-primary btn-block letter-sp-m" id="boutique-submit" aria-disabled="true">INVIA</button> -->
+                                <button type="submit" class="btn btn-primary btn-block letter-sp-m" id="boutique-submit">INVIA</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Chiudi
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footerdr></footerdr>

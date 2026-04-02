@@ -1,0 +1,89 @@
+<navbar></navbar>
+<breadcrumbs></breadcrumbs>
+<main role="main">
+    <div class="container">
+        <h2>Contatti</h2>
+        <div id="dati-form" aria-live="polite"></div>
+        <form name="contatti" id="contatti" role="form" novalidate>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group required">
+                        <label for="nome">Nome: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                        <input type="text" class="form-control" name="nome" id="nome" ng-model="user.nome" required  aria-required="true" placeholder="Inserisci il tuo nome">
+                    </div>
+                    <div ng-show="contatti.nome.$touched && contatti.nome.$error.required" class="alert alert-danger"
+                        role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span><span>Il campo nome è obbligatorio.</span>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group required">
+                        <label for="cognome">Cognome: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                        <input type="text" class="form-control" name="cognome" id="cognome" ng-model="user.cognome" required  aria-required="true" placeholder="Inseisci il tuo cognome">
+                    </div>
+                    <div ng-show="contatti.cognome.$touched && contatti.cognome.$error.required"
+                        class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span><span>Il campo cognome è obbligatorio.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group required">
+                        <label for="email">Email: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                        <input type="email" class="form-control" name="email" id="email" ng-model="user.email" required  aria-required="true" placeholder="Inserisci la tua email">
+                    </div>
+                    <div ng-show="contatti.email.$touched && contatti.email.$error.required" class="alert alert-danger"
+                        role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span><span>Il campo email è obbligatorio.</span>
+                    </div>
+                    <div ng-show="contatti.email.$touched && contatti.email.$error.email" class="alert alert-danger"
+                        role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span><span>Il campo email non è valido</span>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group required">
+                        <label for="inviaa">Invia a: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                        <select class="form-control" name="inviaa" id="inviaa" ng-model="user.inviaa"
+                            ng-options="opt as opt.nome for opt in opzioniInvio track by opt.id"
+                            required  aria-required="true" aria-label="Uffici a cui inviare la comunicazione">
+                            <option value="">Scegli un valore</option>
+                            <option></option>
+                        </select>
+                    </div>
+                    <div ng-show="contatti.inviaa.$touched && contatti.inviaa.$error.required"
+                        class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span><span>Il campo invia a è obbligatorio</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group required">
+                        <label for="messaggio">Messaggio: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                        <textarea class="form-control" rows="5" name="messaggio" id="messaggio"
+                            ng-model="user.messaggio" required  aria-required="true" placeholder="Inserisci il tuo messaggio"></textarea>
+                    </div>
+                    <div ng-show="contatti.messaggio.$touched && contatti.messaggio.$error.required"
+                        class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span><span>Il campo messaggio a è obbligatorio</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <button type="submit" class="btn btn-primary btn-block letter-sp-m" ng-click="invia()"
+                    ng-disabled="contatti.$invalid">INVIA</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+<footerdr></footerdr>

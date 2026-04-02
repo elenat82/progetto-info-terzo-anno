@@ -1,0 +1,35 @@
+Javascript: inserire almeno 5 funzioni Javascript, di cui 
+
+- 2 devono controllare la correttezza dei campi di un form  e consentirne l’invio se tutto è corretto --> il form del'ordinazione su misura è validato con javascript e l'iscrizione alla newsletter
+
+- 1 funzione deve utilizzare proprietà e metodi dell’oggetto window, --> per andare alla pagina dei grafici uso il metodo confirm e se l'utente risponde sì apro la pagina con il metodo open e scrivo nel localStorage che la pagina è stata visitata
+
+- e infine 2 funzioni devono utilizzare proprietà e metodi dell’oggetto document e dei suoi figli ed eventi correlati --> nell'invio del form dei contatti creo un div che appendo ad un altro div con dentro il contenuto del form e nella mappa uso navigator.geolocation per centrare la mappa
+
+
+
+Jquery: inserire almeno 4 funzioni Jquery, di cui 
+
+- 2 devono controllare la correttezza dei campi di un form  e consentirne l’invio se tutto è corretto --> il form che si apre nella modale dell'ordinazione su misura è validato con jquery e quello per contattare la boutique
+
+- mentre 2 funzioni devono interagire con elementi del  DOM attraverso effetti toggle, slide e/o eventi che coinvolgano l’interazione con l’utente --> in home page ho creato un effetto simile all'accordion e nella pagine dell'ordinazione su misura al submit del form si apre una modale 
+
+
+
+- Angular: inserire del codice Angular JS, in particolare 
+
+- almeno 2 controller --> ogni pagina e ogni direttiva ha il proprio controller
+
+- almeno 2 filtri --> filtro pathToBreadcrumb e colorNameToSwatch
+
+- almeno 1 validazione su campi di form --> il form della pagina contatti è validato con Angular
+
+- almeno 2 eventi, di cui uno con una animazione --> all'evento di change sui checkbox della lista delle calzature applico dei filtri alla lista e all'ng-show / hide di una variabile di loading faccio apparire / scomparire un div con un'animazione
+
+- almeno 1 servizio --> ho creato due servizi che servono per recuperare i dati sui prodotti e sui negozi
+
+
+-  Chart JS: inserire un grafico a scelta con dei dati coerenti con l’argomento del corso --> ho fatto una pagina a parte perchè ho letto che per usare chart.js all'interno di Angular è necessario usare un npm module 
+
+
+-  Accessibilità: tutte le pagine devono essere accessibili secondo quanto visto a lezione. Non verrà richiesta validazione automatica, ma verranno verificate dalla docente durante la discussione orale. Non è un problema se una, massimo due pagine contengono effetti multimediali che inibiscono la completa accessibilità (ad es. un video senza sottotitoli, la pagina con chartJS, ecc). 

@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "nome": "Roma - Piazza di Spagna",
+        "indirizzo": "Piazza di Spagna 33",
+        "telefono1": "+39 06 69924220",
+        "telefono2": "+39 349 090 7559",
+        "lat": 41.90549700,
+        "lng": 12.48270300,
+        "markerOffsetX": 0,
+        "markerOffsetY": 0
+    },
+    {
+        "id": 2,
+        "nome": "Giuseppe Zanotti Monte Donna",
+        "indirizzo": "Via Montenapoleone 8",
+        "telefono1": "+39 02 76280759",
+        "telefono2": "+39 337 106 7450",
+        "lat": 45.46801790,
+        "lng": 9.19570950,
+        "markerOffsetX": -10,
+        "markerOffsetY": -20
+    },
+    {
+        "id": 3,
+        "nome": "Giuseppe Zanotti Monte Uomo",
+        "indirizzo": "Via Montenapoleone 22",
+        "telefono1": "39 02 76316808",
+        "telefono2": "+39 366 692 1098",
+        "lat": 45.46978090,
+        "lng": 9.19334113,
+        "markerOffsetX": 80,
+        "markerOffsetY": 20
+    }
+]

@@ -1,0 +1,623 @@
+/* ----------- STILI GENERICI ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container-fluid .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container-fluid .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+h3,
+h2 {
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+}
+
+.letter-sp-l {
+    letter-spacing: 2rem;
+    text-indent: 2rem;
+}
+
+.letter-sp-m {
+    letter-spacing: 1.3rem;
+    text-indent: 1.3rem;
+}
+
+.letter-sp-s {
+    letter-spacing: 0.5rem;
+    text-indent: 0.5rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    font-size: 16px;
+    transition: all 0.4s ease-in-out;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn-primary:hover {
+    color: #000;
+    background-color: #fff;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-primary.active,
+.btn-primary:active,
+.open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn-primary.active,
+.btn-primary:active,
+.open>.dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled.focus,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:hover,
+.btn-primary[disabled].focus,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary.focus,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn,
+.btn[aria-disabled="true"],
+fieldset[aria-disabled="true"] .btn {
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: .65;
+}
+
+.btn.btn-link {
+    padding: 0;
+}
+
+.breadcrumb-container {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb-container .breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.form-group.required .fa-asterisk {
+    color: red;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+/* --------------- NAVBAR ------------------ */
+.navbar-default {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: initial;
+    border-bottom: solid 3px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-right button {
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-right button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+}
+
+/* -------------- LOADER ------------------- */
+.loading {
+    position: fixed;
+    background: #000;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loading.ng-hide {
+    opacity: 0;
+    transition: opacity ease-out 1.2s;
+}
+
+
+/* ------------- SLIDESHOW ----------------- */
+
+.carousel {
+    background-color: #000;
+}
+
+.carousel img {
+    margin: auto;
+}
+
+.ultimi-arrivi-container .link-calzature a {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: block;
+    padding: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease-in-out;
+}
+
+.ultimi-arrivi-container .link-calzature a:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+/* ------------ ACCORDION ------------ */
+.imitazione-accordion .list-group-item {
+    border: none;
+}
+
+.imitazione-accordion .titolo-accordion {
+    cursor: pointer;
+}
+
+.titolo-accordion h5 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.titolo-accordion:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contenuto-accordion {
+    display: none;
+    padding: 1.5rem;
+}
+
+/* ----------------------VIDEO ---------------*/
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.video-container video {
+    top: -50%;
+    width: 100%;
+    position: absolute;
+}
+
+.video-container .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.video-container .video-caption {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    top: 70%;
+}
+
+.video-container .video-caption a {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: block;
+    padding: 0.5rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.video-container .video-caption a:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease-in-out;
+}
+
+/* ---------------- FILTRO CALZATURE --------- */
+
+legend {
+    border-bottom: none;
+    font-size: 16px;
+}
+
+.color-swatch {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.color-swatch.color-argento {
+    background-color: #D4D3D7;
+}
+
+.color-swatch.color-blu {
+    background-color: #207AD4;
+}
+
+.color-swatch.color-grigio {
+    background-color: #8C8484;
+}
+
+.color-swatch.color-nero {
+    background-color: #2F2929;
+}
+
+.color-swatch.color-oro {
+    background-color: #FAEED0;
+}
+
+.color-swatch.color-rosa {
+    background-color: #E3B4C7;
+}
+
+.color-swatch.color-rosso {
+    background-color: #ED3F3D;
+}
+
+.form-group.swatch-label {
+    display: inline-flex;
+    padding: 0.5rem;
+}
+
+.form-group.swatch-label label {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    width: 115px;
+}
+
+.form-group.swatch-label label span {
+    margin-right: 0.5rem;
+}
+
+
+/* ---------------- LISTA CALZATURE ------------- */
+
+.lista-calzature {
+    padding-top: 5rem;
+}
+
+.lista-calzature a {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.lista-calzature a:hover {
+    text-decoration: none;
+}
+
+.lista-calzature h4 {
+    font-weight: bold;
+}
+
+.lista-calzature .prezzo {
+    font-size: 19px;
+}
+
+.shop-item {
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.shop-item a {
+    display: block;
+}
+
+.shop-item a:focus,
+.lista-calzature a:focus {
+    outline: 5px auto #8c8c8c;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.shop-item-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.shop-item-image img {
+    width: 100%;
+}
+
+.shop-item-overlay,
+.shop-item-image:after {
+    transition: all 0.4s ease-in-out;
+}
+
+.shop-item-image:after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.shop-item-overlay {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 100%;
+    padding: 20px;
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.shop-item-overlay .fa-plus {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.shop-item-title {
+    margin: 15px 0 5px;
+}
+
+.shop-item:hover .shop-item-image:after,
+.shop-item:focus .shop-item-image:after {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.shop-item:hover .shop-item-overlay,
+.shop-item:focus .shop-item-overlay {
+    opacity: 1;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+/* ------------------ DETTAGLIO PRODOTTO --------------- */
+
+.dettaglio-prodotto .col-sm-6 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.dettaglio-prodotto p {
+    font-size: 16px;
+}
+
+.dettaglio-prodotto .prezzo-prodotto {
+    font-size: 19px;
+}
+
+.dettaglio-prodotto .acquista {
+    padding-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* ------------------ MAPPA BOUTIQUES ---------------*/
+#map {
+    height: 500px;
+}
+
+.lista-boutiques {
+    margin-bottom: 5rem;
+}
+
+.lista-boutiques h4 {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease-in-out;
+}
+
+.lista-boutiques h4:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.lista-boutiques p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.lista-boutiques a,
+.lista-boutiques button,
+.lista-boutiques button:hover {
+    color: inherit;
+}
+
+.lista-boutiques a i {
+    margin-right: 1.5rem;
+}
+
+/* ---------------- FORM -------------------*/
+input.ng-touched.ng-invalid {
+    border: solid 1px red;
+}
+
+/* --------------- FOOTER ----------------- */
+
+footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: black;
+}
+
+footer h5 {
+    font-size: 16px;
+    color: #fff;
+}
+
+footer li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.4s ease-in-out;
+}
+
+footer a:hover {
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.list-socials {
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* ---------- GRAFICI -------- */
+
+.grafici-container form {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+@media (max-width:359px) {
+    .video-container {
+        display: none;
+    }
+}
+
+@media (min-width:360px) and (max-width:528px) {
+    body {
+        padding-top: 100px;
+    }
+
+    .navbar-header img {
+        width: 100%;
+    }
+
+    .video-container video {
+        position: static;
+    }
+
+    .video-container,
+    .video-container .row,
+    .video-container-inner {
+        height: 200px;
+    }
+
+}
+
+@media (min-width:529px) and (max-width:768px) {
+    body {
+        padding-top: 51px;
+    }
+
+    .video-container,
+    .video-container .row,
+    .video-container-inner {
+        height: 250px;
+    }
+
+    video {
+        height: 480px;
+    }
+}
+
+@media (min-width:768px) and (max-width:930px) {
+    body {
+        padding-top: 100px;
+    }
+
+    .video-container,
+    .video-container .row,
+    .video-container-inner {
+        height: 300px;
+    }
+
+    video {
+        height: 590px;
+    }
+}
+
+@media (min-width:930px) and (max-width:1200px) {
+    body {
+        padding-top: 100px;
+    }
+
+    .video-container,
+    .video-container .row,
+    .video-container-inner {
+        height: 350px;
+    }
+}
+
+@media (min-width:1200px) {
+
+    body {
+        padding-top: 50px;
+    }
+
+    .video-container,
+    .video-container .row,
+    .video-container-inner {
+        height: 450px;
+    }
+}

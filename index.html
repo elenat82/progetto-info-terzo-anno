@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giuseppe Zanotti</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <script	src="https://cdnjs.cloudflare.com/ajax/libs/angular-animate/1.8.3/angular-animate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.9/angular-sanitize.min.js" integrity="sha512-zh1j5K9S8SI8R5JAmPKhJ4kH/RJJgMTqPn+1+WLpl/3aEn+vsyYjnMc8OvVhpXtF1z49qPlMyY100M9Pt2Xtdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/services.js"></script>
+
+  <!-- richiesto dalla modalità HTML5 del servizio $location -->
+  <base href="/">
+
+</head>
+
+<body>
+  <loader ng-show="loading" class="loading"></loader>
+  <div ng-view ng-show="!loading"></div>
+
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7WfYp8geLda9hFmOKD_zsZLSuoVpYCOM&callback=angular.noop"
+      defer
+    ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafici</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <main role="main">
+        <div class="container grafici-container">
+            <h2 class="text-center letter-sp-l">GRAFICI</h2>
+            <form name="grafici" id="grafici" role="form">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <fieldset>
+                            <legend>Seleziona le boutiques di cui vuoi visualizzare i dati</legend>
+                            <div class="form-group">
+                                <label class="checkbox-inline"><input type="checkbox" name="roma" id="roma">
+                                    Roma</label>
+                                <label class="checkbox-inline"><input type="checkbox" name="milano-donna"
+                                        id="milano-donna"> Milano
+                                    Donna</label>
+                                <label class="checkbox-inline"><input type="checkbox" name="milano-uomo"
+                                        id="milano-uomo"> Milano
+                                    Uomo</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </form>
+            <div aria-live="polite">
+                <canvas id="myChart" aria-label="Grafico fatturato boutiques" role="img">
+                    <p>Grafico fatturato boutiques</p>
+                </canvas>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        const romaData = [
+            { mese: 'gennaio', fatturato: 2457839 },
+            { mese: 'febbraio', fatturato: 1970450 },
+            { mese: 'marzo', fatturato: 2504735 },
+            { mese: 'aprile', fatturato: 2029463 },
+            { mese: 'maggio', fatturato: 2257327 },
+            { mese: 'giugno', fatturato: 1989679 },
+            { mese: 'luglio', fatturato: 2367859 },
+        ];
+        const milanoDonnaData = [
+            { mese: 'gennaio', fatturato: 2758837 },
+            { mese: 'febbraio', fatturato: 2570650 },
+            { mese: 'marzo', fatturato: 1564636 },
+            { mese: 'aprile', fatturato: 2122263 },
+            { mese: 'maggio', fatturato: 1254347 },
+            { mese: 'giugno', fatturato: 1881619 },
+            { mese: 'luglio', fatturato: 2497051 },
+        ];
+        const milanoUomoData = [
+            { mese: 'gennaio', fatturato: 1454842 },
+            { mese: 'febbraio', fatturato: 1135460 },
+            { mese: 'marzo', fatturato: 2004433 },
+            { mese: 'aprile', fatturato: 2023367 },
+            { mese: 'maggio', fatturato: 1097624 },
+            { mese: 'giugno', fatturato: 1887679 },
+            { mese: 'luglio', fatturato: 2064865 },
+        ];
+
+        let chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: milanoDonnaData.map(function (row) {
+                    return row.mese
+                }),
+                datasets: [
+                    {
+                        label: 'Vendite mensili Roma',
+                        data: romaData.map(function (row) {
+                            return row.fatturato
+                        })
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        $(document).ready(function () {
+            $('#roma').prop('checked', true);
+            $("input[type='checkbox']").change(function () {
+                let selected = [];
+                chart.data.datasets = [];
+                chart.update();
+                $('input:checked').each(function () {
+                    selected.push(this.name);
+                });
+                selected.forEach(function(el) {
+                    if (el == "roma") {
+                        const newDataset = {
+                            label: 'Vendite mensili Roma',
+                            data: romaData.map(function (row) {
+                                return row.fatturato
+                            }),
+                            backgroundColor: '#9BD0F5',
+                        };
+                        chart.data.datasets.push(newDataset);
+                    }
+                    if (el == "milano-donna") {
+                        const newDataset = {
+                            label: 'Vendite mensili Milano Donna',
+                            data: milanoDonnaData.map(function (row) {
+                                return row.fatturato
+                            }),
+                            backgroundColor: '#FFB1C1',
+                        };
+                        chart.data.datasets.push(newDataset);
+                    }
+                    if (el == "milano-uomo") {
+                        const newDataset = {
+                            label: 'Vendite mensili Milano Uomo',
+                            data: milanoUomoData.map(function (row) {
+                                return row.fatturato
+                            }),
+                            backgroundColor: '#00B1C1',
+                        };
+                        chart.data.datasets.push(newDataset);
+                    }
+                    chart.update();
+                })
+            })
+        });
+    </script>
+</body>
+
+</html>

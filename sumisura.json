@@ -1,0 +1,116 @@
+{
+    "tessuti": [
+        {
+            "id": "1",
+            "nome": "effetto vernice"
+        },
+        {
+            "id": "2",
+            "nome": "velluto"
+        },
+        {
+            "id": "3",
+            "nome": "raso"
+        },
+        {
+            "id": "4",
+            "nome": "suede"
+        },
+        {
+            "id": "5",
+            "nome": "pelle laminata"
+        },
+        {
+            "id": "6",
+            "nome": "pelle specchiata"
+        }
+    ],
+    "decori": [
+        {
+            "id": "1",
+            "nome": "strass in tono"
+        },
+        {
+            "id": "2",
+            "nome": "strass cristallo"
+        },
+        {
+            "id": "3",
+            "nome": "cristalli multicolore"
+        },
+        {
+            "id": "4",
+            "nome": "accessorio Snake"
+        },
+        {
+            "id": "5",
+            "nome": "accessorio Amira"
+        },
+        {
+            "id": "6",
+            "nome": "accessorio G-logo"
+        },
+        {
+            "id": "7",
+            "nome": "accessorio Flower"
+        }
+    ],
+    "colori": [
+        {
+            "id": "1",
+            "nome": "argento"
+        },
+        {
+            "id": "2",
+            "nome": "oro"
+        },
+        {
+            "id": "3",
+            "nome": "rosso"
+        },
+        {
+            "id": "4",
+            "nome": "nero"
+        },
+        {
+            "id": "5",
+            "nome": "blu"
+        },
+        {
+            "id": "6",
+            "nome": "rosa"
+        }
+    ],
+    "chiusure": [
+        {
+            "id": "1",
+            "nome": "cinturino alla caviglia"
+        },
+        {
+            "id": "2",
+            "nome": "cinturino con frange"
+        },
+        {
+            "id": "3",
+            "nome": "zip sul retro"
+        },
+        {
+            "id": "4",
+            "nome": "tallone scoperto"
+        }
+    ],
+    "punte": [
+        {
+            "id": "1",
+            "nome": "aperta"
+        },
+        {
+            "id": "2",
+            "nome": "a punta"
+        },
+        {
+            "id": "3",
+            "nome": "tonda"
+        }
+    ]
+}

@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "nome": "Florant",
+        "altezzaTacco": 105,
+        "colore": "oro",
+        "prezzo": 1250,
+        "immagine": "florant.jpg",
+        "descrizione": "<p>Questo sandalo realizzato in vernice rosa, caratterizzato da un sontuoso maxi fiore in velluto ricamato di strass in tono, presenta un cinturino alla caviglia con chiusura regolabile con fibbia in metallo color argento e un tacco a stiletto ricoperto in velluto rosa.</p><p>Vernice rosa</p><p>Maxi fiore in velluto rosa con ricamo strass color rosa</p><p>Cinturino alla caviglia regolabile con fibbia in metallo color argento</p><p>Tacco ricoperto in velluto rosa</p><p>Altezza tacco 105 mm</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 2,
+        "nome": "Intriigo Crystal",
+        "altezzaTacco": 105,
+        "colore": "nero",
+        "prezzo": 1250,
+        "immagine": "intriigocrystal.jpg",
+        "descrizione": "<p>Questo sandalo open-toe a punta, realizzato in tessuto sintetico effetto vernice nero, presenta una suola in cuoio impreziosita da un dettaglio dorato, un tacco a stiletto ricoperto in tono ed è caratterizzato da un cinturino con accessorio a frange in metallo color argento e strass color cristallo che avvolge sensualmente la caviglia.</p><p>Tessuto sintetico effetto vernice nero (34% PL; 66% PU)</p><p>Catena in metallo color argento e strass color cristallo</p><p>Altezza tacco 105 mm</p><p>Tacco ricoperto in tessuto sintetico effetto vernice nero (34% PL; 66% PU)</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 3,
+        "nome": "Adele Crystal",
+        "altezzaTacco": 105,
+        "colore": "rosso",
+        "prezzo": 1295,
+        "immagine": "adelecrystal.jpg",
+        "descrizione": "<p>Sandalo realizzato in raso e suede color ciliegia e impreziosito da un luminoso accessorio gioiello sul tallone in metallo argentato e strass color cristallo, abbinato al cinturino alla caviglia</p> <p>Il modello è completato da un tacco a spillo ricoperto in tono e da una suola in cuoio con logo</p> <p>Tomaia in raso e suede color ciliegia</p> <p>Accessorio su tallone e cinturino in metallo color argento e strass cristallo</p> <p> Altezza tacco 105 mm</p> <p>Tacco ricoperto in raso color ciliegia</p> <p>Suola in cuoio con logo</p> <p>Made in Italy</p>"
+    },
+    {
+        "id": 4,
+        "nome": "Julianne",
+        "altezzaTacco": 105,
+        "colore": "blu",
+        "prezzo": 750,
+        "immagine": "julianne.jpg",
+        "descrizione": "<p>Questo sandalo mule realizzato in suede bluette presenta sottili listini decorati da una ricamo in strass color blu ed è caratterizzato dal tacco stiletto ricoperto in tono.</p><p>Suede bluette</p><p>Ricamo strass color blu</p><p>Tacco ricoperto in suede bluette</p><p>Altezza tacco 105 mm</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 5,
+        "nome": "Harmony Diamond",
+        "altezzaTacco": 90,
+        "colore": "grigio",
+        "prezzo": 1195,
+        "immagine": "harmonydiamond.jpg",
+        "descrizione": "<p>Sandalo in pelle laminata color amianto, caratterizzato da cristalli multicolore e completato da un tacco a stiletto ricoperto ton sur ton e dalla chiusura con zip sul retro con tiralampo abbinato.</p><p>Pelle laminata color amianto</p> <p>Cristalli multicolore</p><p>Altezza tacco 90 mm</p><p>Plateau interno di 10 mm</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 6,
+        "nome": "Venere",
+        "altezzaTacco": 120,
+        "colore": "rosso",
+        "prezzo": 1595,
+        "immagine": "venere.jpg",
+        "descrizione": "<p>Dal nuovo progetto 'Giuseppe Zanotti Icons', ecco 'Venere', l'iconico sandalo stiletto nato nel 2012, e riproposto oggi in suede rosso con accessorio 'Snake' in metallo. Un nuovo capitolo di stile per un'icona Giuseppe Zanotti che trascende dai concetti di trend e stagione.</p><p>Altezza tacco 120 mm</p><p>Suede rosso</p><p>Accessorio 'Snake' in metallo</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 7,
+        "nome": "Amira",
+        "altezzaTacco": 105,
+        "colore": "oro",
+        "prezzo": 1595,
+        "immagine": "amira.jpg",
+        "descrizione": "<p>Dal nuovo progetto 'Giuseppe Zanotti Icons', ecco Amira, l'iconico sandalo nato nel 2005, e riproposto oggi in pelle laminata color bronzo con accessorio 'Amira' in metallo.</p> <p>Questo intramontabile sandalo, che trascende il tempo e lo spazio, è caratterizzato da una maglia composta da gioielli ornamentali, cristalli e perline. Anche il più piccolo componente è realizzato e applicato a mano, rendendo così ogni paio unico nel suo genere.</p><p>Altezza tacco 105 mm</p><p>Pelle laminata color bronzo</p><p>Accessorio 'Amira'</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 8,
+        "nome": "Harmony G",
+        "altezzaTacco": 120,
+        "colore": "nero",
+        "prezzo": 995,
+        "immagine": "harmonyg.jpg",
+        "descrizione": "<p>Questo sandalo realizzato in vernice nera con listini sottili e chiusura con cerniera posteriore è caratterizzato dall'accessorio 'G-logo' in metallo argentato che decora il collo del piede nella sua lunghezza e dal tacco a spillo ricoperto in tono.</p><p>Pelle in vernice nera</p><p>Accessorio 'G-logo' in metallo</p><p>Altezza tacco 120 mm</p><p>Suola in cuoio con logo</p>"
+    },
+    {
+        "id": 9,
+        "nome": "Symonne",
+        "altezzaTacco": 85,
+        "colore": "oro",
+        "prezzo": 695,
+        "immagine": "symonne.jpg",
+        "descrizione": "<p>Sandalo mule open toe in tessuto effetto raso rosa antico e pelle nera, caratterizzato dalla fascia anteriore incrociata con un dettaglio catena in metallo color oro e dal tacco a stiletto ricoperto in tono.</p><p>Tomaia in tessuto effetto raso rosa antico e pelle nera</p><p>Tomaia in tessuto effetto raso nero e pelle nera</p><p>Dettaglio catena in metallo color oro</p><p>Dettaglio catena in metallo color oro</p><p>Altezza tacco 85 mm</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 10,
+        "nome": "Lilibeth Starlight",
+        "altezzaTacco": 85,
+        "colore": "argento",
+        "prezzo": 750,
+        "immagine": "lilibethstarlight.jpg",
+        "descrizione": "<p>Sandalo slingback realizzato in suede argento, impreziosito da un ricamo multi strass sulla fascia anteriore e dal tacco a spillo ricoperto in tessuto sintetico effetto specchiato color argento. La suola in cuoio laminata in tono e il cinturino posteriore elasticizzato completano il design di questo modello.</p><p>Altezza tacco 85 mm</p><p>Suede argento</p><p>Ricamo multi strass</p><p>Tacco ricoperto in tessuto sintetico effetto specchiato color argento 34%PES 47%PU 19%TPU</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 11,
+        "nome": "Eclair",
+        "altezzaTacco": 105,
+        "colore": "nero",
+        "prezzo": 498,
+        "immagine": "eclair.jpg",
+        "descrizione": "<p>Altezza tacco 105 mm</p><p>Suede nero</p><p>Fiocchi in suede e velluto nero</p><p>Strass color cristallo</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 12,
+        "nome": "Lilium",
+        "altezzaTacco": 105,
+        "colore": "nero",
+        "prezzo": 995,
+        "immagine": "lilium.jpg",
+        "descrizione": "<p>Altezza tacco 105 mm</p><p>Pelle nera</p><p>Accessorio 'Flower' regolabile realizzato a mano</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 13,
+        "nome": "Peony",
+        "altezzaTacco": 115,
+        "colore": "rosa",
+        "prezzo": 995,
+        "immagine": "peony.jpg",
+        "descrizione": "<p>Sandalo Couture in raso rosa. Un allure iper femminile esaltato dalla macro applicazione 'Flower Peony' e dal tacco a stiletto nelle stesse tonalità.</p><p>Suola in cuoio e cinturino alla caviglia regolabile con fibbia.</p><p>Altezza tacco 115 mm</p><p>Tomaia in tessuto raso color rosa</p><p>Applicazione 'Flower' Peony</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 14,
+        "nome": "Etoile",
+        "altezzaTacco": 105,
+        "colore": "rosa",
+        "prezzo": 1195,
+        "immagine": "etoile.jpg",
+        "descrizione": "<p>Altezza tacco 105 mm</p><p>Tessuto chiffon rosa e raso 'Nude'</p><p>Maxi 'Bow' in raso</p><p>Accessorio cristallo vintage</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 15,
+        "nome": "Coralli",
+        "altezzaTacco": 105,
+        "colore": "argento",
+        "prezzo": 1595,
+        "immagine": "coralli.jpg",
+        "descrizione": "<p>Altezza tacco 105 mm</p><p>Pelle laminata argento</p><p>Accessorio gioiello 'Corallo' con cristalli</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 16,
+        "nome": "Harmony Love",
+        "altezzaTacco": 120,
+        "colore": "rosso",
+        "prezzo": 658,
+        "immagine": "harmonylove.jpg",
+        "descrizione": "<p>Altezza tacco 120 mm</p><p>Tomaia in vernice color rosso papavero</p><p>Ricami in camoscio e cristalli applicati</p><p>Tacco a stiletto</p><p>Chiusura con zip sul retro</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 17,
+        "nome": "Catena",
+        "altezzaTacco": 105,
+        "colore": "oro",
+        "prezzo": 995,
+        "immagine": "catena.jpg",
+        "descrizione": "<p>Altezza tacco 105 mm</p><p>Pelle specchiata oro</p><p>Catene in metallo</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 18,
+        "nome": "Iride",
+        "altezzaTacco": 90,
+        "colore": "rosa",
+        "prezzo": 650,
+        "immagine": "iride.jpg",
+        "descrizione": "<p>Sandalo in pelle laminata rosa con tacco ricoperto in tono, sottili listini impreziositi da strass in tono e suola in cuoio laminata.</p><p>Pelle laminata rosa</p><p>Listini con strass in tono</p><p>Altezza tacco 90 mm</p><p>Altezza plateau 10 mm</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 19,
+        "nome": "Madelyn",
+        "altezzaTacco": 115,
+        "colore": "nero",
+        "prezzo": 1244,
+        "immagine": "madelyn.jpg",
+        "descrizione": "<p>Sandalo Madelyn in raso nero con listini decorati da un maxi dettaglio di cristalli Swarovski d allacciatura frontale.</p><p>Altezza tacco 115 mm.</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    },
+    {
+        "id": 20,
+        "nome": "Carine",
+        "altezzaTacco": 125,
+        "colore": "nero",
+        "prezzo": 950,
+        "immagine": "carine.jpg",
+        "descrizione": "<p>Realizzati in raso nero, questi sandali Giuseppe Zanotti Design dalla forma essenziale diventano preziosi grazie al listino che decora il collo del piede con un motivo di cristalli bianchi e blu.</p><p>Altezza tacco 125 mm</p><p>Pelle nera</p><p>Suola in cuoio con logo</p><p>Made in Italy</p>"
+    }
+]

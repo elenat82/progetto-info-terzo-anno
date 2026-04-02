@@ -1,0 +1,50 @@
+<navbar></navbar>
+<breadcrumbs></breadcrumbs>
+<main role="main">
+    <div class="container">
+        <h2 class="text-center letter-sp-l">CALZATURE</h2>
+        
+            <form name="filtriForm" id="filtriForm" role="form" class="form-inline">
+                <div class="row">
+                    <div class="col-md-6">
+                        <fieldset>
+                            <legend>FILTRA PER COLORE</legend>
+                            <div class="form-group swatch-label" ng-repeat="c in colori track by $index">
+                                <input type="checkbox" ng-model="filtri.colore[c]" name="colore" id="colore-{{c}}"
+                                    ng-change="filtraPerColore()"> <label for="colore-{{c}}"
+                                    ng-bind-html="c | colorNameToSwatch"></label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                        <fieldset>
+                            <legend>FILTRA PER ALTEZZA TACCO</legend>
+                            <div class="form-group swatch-label" ng-repeat="a in altezzeTacco track by $index">
+                                <input type="checkbox" ng-model="filtri.altezzeTacco[a]" name="altezzaTacco"
+                                    id="altezzaTacco-{{a}}" ng-change="filtraPerTacco()"> <label
+                                    for="altezzaTacco-{{a}}">{{a}}</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </form>
+        
+        <div class="row lista-calzature" ng-if="calzature">
+            <div class="col-sm-6 col-md-4"
+                ng-repeat="c in calzature | filter: filtraPerColore | filter: filtraPerTacco | orderBy: 'nome' track by c.id">
+                <a ng-href="/calzature/{{c.id}}" title="Vai al dettaglio di {{c.nome}}">
+                    <div class="shop-item">
+                        <div class="shop-item-image"><img ng-src="../img/{{c.immagine}}" alt="Immagine della calzatura {{c.nome}}" class="img-responsive">
+                            <div class="shop-item-overlay">
+                                <span class="fa-solid fa-plus" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <h4 class="shop-item-title text-center">{{c.nome}}</h4>
+                        <p class="prezzo">{{c.prezzo | currency:"€"}} </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+<footerdr></footerdr>

@@ -1,0 +1,196 @@
+<navbar></navbar>
+<main role="main">
+    <div class="container-fluid slideshow-container">
+        <div class="row">
+            <div id="carousel-example-generic" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <!-- https://www.w3.org/WAI/tutorials/images/decision-tree/ -->
+                        <img src="../img/carousel1cropped.jpg" alt="" class="img-responsive">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/carousel2cropped.jpg" alt="" class="img-responsive">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/carousel4cropped.jpg" alt="" class="img-responsive">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/carousel5cropped.jpg" alt="" class="img-responsive">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/carousel6cropped.jpg" alt="" class="img-responsive">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/carousel7cropped.jpg" alt="" class="img-responsive">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container ultimi-arrivi-container" ng-if="ultimiArrivi">
+        <div class="row">
+            <h3 class="text-center letter-sp-l">ULTIMI ARRIVI</h3>
+        </div>
+        <div class="row ultimi-arrivi">
+            <div class="shop-item col-xs-6 col-md-3" ng-repeat="u in ultimiArrivi track by $index">
+                <a ng-href="/calzature/{{u.id}}" title="Vai al dettaglio di {{u.nome}}">
+                    <div class="shop-item-image"><img ng-src="../img/{{u.immagine}}"
+                            alt="Immagine della calzatura {{u.nome}}" class="img-responsive">
+                        <div class="shop-item-overlay">
+                            <span class="fa-solid fa-plus" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row link-calzature">
+            <div class="col-sm-6 col-sm-offset-3 text-center">
+                <a ng-href="/calzature" title="Vai alla pagina Calzature" class="letter-sp-s ">
+                    <h4 class="">VEDI TUTTI</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container cura-prodotto-container">
+        <div class="row">
+            <h3 class="text-center letter-sp-l">CURA DEL PRODOTTO</h3>
+        </div>
+        <div class="row">
+            <ul class="list-group imitazione-accordion">
+                <li class="list-group-item titolo-accordion" role="button" aria-expanded="false">
+                    <h5><span>Come mantenere la forma della scarpa?</span> <span class="fa-solid fa-chevron-down"
+                            aria-hidden="true"></span></h5>
+                    <div class="contenuto-accordion">
+                        <p>E’ del tutto naturale che la forma della scarpa cambi nel tempo. Le calzature Giuseppe
+                            Zanotti si
+                            modellano sul piede di chi le indossa e possono subire ulteriori modifiche a seguito di una
+                            lunga e
+                            prolungata usura. </p>
+                        <p>I pellami, per loro natura, tendono con il tempo a formare delle rughe e
+                            delle
+                            piccole crepe.</p>
+                        <p> prolungarne l'elasticità e mantenere la forma delle calzature è
+                            consigliabile
+                            riempirne l’interno con carta velina quando non indossate.</p>
+                    </div>
+                </li>
+                <li class="list-group-item titolo-accordion" role="button" aria-expanded="false">
+                    <h5><span>Consigli per la cura delle suole</span> <span class="fa-solid fa-chevron-down"
+                            aria-hidden="true"></span></h5>
+                    <div class="contenuto-accordion">
+                        <p>Le suole delle calzature Giuseppe Zanotti sono realizzate in materiali lisci e delicati. E’
+                            quindi
+                            normale che si logorino con l’usura. Questo non è un difetto di fabbricazione, ma un
+                            processo del
+                            tutto naturale.</p>
+
+                        <p> LAMINATI: Le suole oro, argento e platino di sneakers e calzature sono ottenute tramite un
+                            elaborato
+                            procedimento di laminatura. Il consumo di tali lamine durante il naturale utilizzo e il
+                            conseguente
+                            emergere del colore base della suola sottostante è da considerarsi caratteristica intrinseca
+                            del
+                            prodotto e non un suo difetto. Per rimuovere piccole quantità di sporco, si consiglia di
+                            utilizzare
+                            un panno morbido leggermente inumidito con acqua.</p>
+
+                        <p>FONDI IN GOMMA: Per la pulizia dei fondi in gomma si consiglia l’utilizzo di un comune
+                            sgrassatore
+                            neutro, da rimuovere con un panno morbido, prestando attenzione a non far entrare il
+                            prodotto in
+                            contatto con la tomaia. Per una pulizia a fondo, suggeriamo di rivolgersi esclusivamente a
+                            lavanderie specializzate.</p>
+                    </div>
+                </li>
+                <li class="list-group-item titolo-accordion" role="button" aria-expanded="false">
+                    <h5><span>Consigli per la cura di ricami, cristalli e placche metalliche</span> <span
+                            class="fa-solid fa-chevron-down" aria-hidden="true"></span></h5>
+                    <div class="contenuto-accordion">
+                        <p>Tutti i nostri prodotti sono interamente realizzati a mano, inclusi ricami, cristalli,
+                            placche e
+                            accessori. E’ importante evitare che questi entrino in diretto contatto con raso, pizzo o
+                            pellami al
+                            fine di evitare graffi o lacerazioni dei tessuti.</p>
+                        <p> Si consiglia pertanto di conservare le
+                            scarpe
+                            separatamente, nelle apposite dust bags. Per la pulizia delle placche metalliche, si
+                            raccomanda
+                            l’utilizzo dell’apposito pannetto presente nella confezione</p>
+                        <p>In caso di accidentale contatto
+                            con
+                            acqua asciugare immediatamente con un panno morbido e asciutto. Per la pulizia di cristalli
+                            e
+                            ricami, utilizzare un panno morbido leggermente inumidito.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid video-container">
+        <div class="row">
+            <div class="video-container-inner">
+                <div class="overlay"></div>
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="../img/video.mp4" type="video/mp4">
+                </video>
+                <div class="text-center video-caption">
+                    <a ng-href="/su-misura" title="Vai alla pagina Su misura" class="letter-sp-s">
+                        <h4 class="">ORDINA LA TUA CALZATURA</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <h3 class="text-center letter-sp-l">RESTA AGGIORNATO</h3>
+            <p class="text-center">Iscriviti alla newsletter inserendo la tua email nel campo sottostante</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <form name="nws-form" id="nws-form" role="form" class="form-inline text-center" action="#" novalidate>
+                    <div class="form-group required">
+                        <label for="nws-email">Email: <span class="fa-solid fa-asterisk"
+                                aria-hidden="true"></span></label>
+                        <input type="email" class="form-control" name="nws-email" id="nws-email" required  aria-required="true"
+                            placeholder="Inserisci la tua email">
+                    </div>
+                    <!-- <button type="submit" id="nws-btn" class="btn btn-primary letter-sp-m"
+                        aria-disabled="true">INVIA</button> -->
+                        <button type="submit" id="nws-btn" class="btn btn-primary letter-sp-m">INVIA</button>
+                </form>
+                <div class="alert alert-danger" role="alert" id="emailerror" hidden>
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span><span>Email non valida</span>
+                </div>
+                <div class="alert alert-danger" role="alert" id="requirederror" hidden>
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span><span>Campo obbligatorio</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footerdr></footerdr>

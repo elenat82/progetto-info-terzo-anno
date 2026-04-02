@@ -1,0 +1,161 @@
+<navbar></navbar>
+<breadcrumbs></breadcrumbs>
+<main role="main">
+    <div class="container">
+        <h2>Richiedi una calzatura su misura</h2>
+        <form name="sumisuraform" id="sumisuraform" role="form">
+            <div class="row">
+                <div class="col-sm-6" ng-if="colori">
+                    <div class="form-group required">
+                        <label for="colore">Colore: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                        <select class="form-control" name="colore" id="colore" required>
+                            <option value="">Scegli un colore</option>
+                            <option ng-repeat="opt in colori" ng-value="{{opt.id}}" id="colore-{{opt.id}}">
+                                {{opt.nome}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6" ng-if="tessuti">
+                    <div class="form-group required">
+                        <label for="tessuto">Tessuto: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                        <select class="form-control" name="tessuto" id="tessuto" required  aria-required="true" aria-label="Tessuto della calzatura">
+                            <option value="">Scegli un tessuto</option>
+                            <option ng-repeat="opt in tessuti" ng-value="{{opt.id}}" id="tessuto-{{opt.id}}">
+                                {{opt.nome}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" ng-if="decori">
+                    <div class="form-group required">
+                        <label for="decoro">Decoro: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                        <select class="form-control" name="decoro" id="decoro" required  aria-required="true" aria-label="Decoro della calzatura">
+                            <option value="">Scegli un decoro</option>
+                            <option ng-repeat="opt in decori" ng-value="{{opt.id}}" id="decoro-{{opt.id}}">
+                                {{opt.nome}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group required" ng-if="chiusure">
+                        <label for="chiusura">Chiusura: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                        <select class="form-control" name="chiusura" id="chiusura" required  aria-required="true" aria-label="Chiusura della calzatura">
+                            <option value="">Scegli una chiusura</option>
+                            <option ng-repeat="opt in chiusure" ng-value="{{opt.id}}" id="chiusura-{{opt.id}}">
+                                {{opt.nome}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" ng-if="punte">
+                    <div class="form-group required">
+                        <label for="punta">Punta: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                        <select class="form-control" name="punta" id="punta" required  aria-required="true" aria-label="Punta della calzatura">
+                            <option value="">Scegli una punta</option>
+                            <option ng-repeat="opt in punte" ng-value="{{opt.id}}" id="punta-{{opt.id}}">
+                                {{opt.nome}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group required">
+                        <label for="altezzatacco">Altezza tacco: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                        <input type="number" class="form-control" name="altezzatacco" id="altezzatacco" min="90"
+                            max="125" value="100" required  aria-required="true">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group required">
+                        <label for="taglia">Taglia: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                        <input type="number" class="form-control" name="taglia" id="taglia" min="34" max="41" value="37"
+                            required  aria-required="true">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="note">Note:</label>
+                        <textarea class="form-control" rows="5" name="note" id="note"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <!-- <button type="submit" class="btn btn-primary btn-block letter-sp-m" aria-disabled="true">
+                        SALVA
+                    </button> -->
+                    <button type="submit" class="btn btn-primary btn-block letter-sp-m">
+                        SALVA
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="indirizzoModalLabel" id="modaleIndirizzo">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="indirizzoModalLabel">
+                        Aggiungi il tuo indirizzo
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div id="dati-form" aria-live="polite"></div>
+                    <form name="indirizzo" id="indirizzo" role="form">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group required">
+                                    <label for="via">Via: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                                    <input type="text" class="form-control input-indirizzo" name="via" id="via" required  aria-required="true" placeholder="Inserisci il tuo indirizzo">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group required">
+                                    <label for="cap">CAP: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                                    <input type="text" class="form-control input-indirizzo" name="cap" id="cap" maxlength="5" required  aria-required="true" placeholder="Inserisci il tuo CAP">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group required">
+                                    <label for="provincia">Provincia: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                                    <input type="text" class="form-control input-indirizzo" name="provincia" id="provincia" required  aria-required="true" maxlength="2" placeholder="Inserisci la tua provincia">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group required">
+                                    <label for="citta">Città: <span class="fa-solid fa-asterisk" aria-hidden="true"></span></label>
+                                    <input type="text" class="form-control input-indirizzo" name="citta" id="citta" required  aria-required="true" placeholder="Inserisci la tua città">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <!-- <button type="submit" class="btn btn-primary btn-block letter-sp-m" id="indirizzo-submit" aria-disabled="true">INVIA</button> -->
+                                <button type="submit" class="btn btn-primary btn-block letter-sp-m" id="indirizzo-submit">INVIA</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Chiudi
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footerdr></footerdr>

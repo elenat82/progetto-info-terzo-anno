@@ -1,0 +1,36 @@
+<navbar></navbar>
+<breadcrumbs></breadcrumbs>
+<main role="main">
+    <div class="container dettaglio-prodotto">
+        <div class="row">
+            <div class="col-sm-6 col-sx">
+                <img ng-src="img/{{dettaglio.immagine}}" alt="Immagine della calzatura {{dettaglio.nome}}"
+                    class="img-responsive">
+            </div>
+            <div class="col-sm-6 col-dx">
+                <h2 class="product-title letter-sp-s">{{dettaglio.nome}}</h2>
+                <p class="prezzo-prodotto">{{dettaglio.prezzo | currency:"€"}}</p>
+                <div class="description" ng-bind-html="dettaglio.descrizione">
+                </div>
+                <div class="row acquista">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="form-group required">
+                            <label for="taglia">Taglia: <span class="fa-solid fa-asterisk"
+                                    aria-hidden="true"></span></label>
+                            <select class="form-control" name="taglia" id="taglia" ng-model="prodotto.taglia"
+                                ng-options="opt as opt.ita for opt in taglie track by opt.id" required
+                                aria-required="true" aria-label="Tglia della calzatura">
+                                <option value="">Scegli una taglia</option>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-8"><button type="submit" class="btn btn-primary btn-block letter-sp-m"
+                            ng-click="acquista()">
+                            ACQUISTA</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footerdr></footerdr>
